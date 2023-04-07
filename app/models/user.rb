@@ -4,4 +4,5 @@ class User < ApplicationRecord
     validates :Age, numericality: { only_integer: true }
 
     has_many :posts
+    has_many :comments
 end
